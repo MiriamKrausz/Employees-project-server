@@ -21,8 +21,8 @@ namespace Employees.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("EmployeesDB"));
-            //optionsBuilder.UseSqlServer(_configuration.GetConnectionString("CloudDB"));
+           // optionsBuilder.UseSqlServer(_configuration.GetConnectionString("EmployeesDB"));
+            optionsBuilder.UseSqlServer(_configuration.GetConnectionString("CloudDB"));
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
